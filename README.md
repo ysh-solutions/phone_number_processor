@@ -62,11 +62,38 @@ true
 
 Currently included:
 
-- Egypt (EG)
+### North America
+
 - United States (US)
+
+### Europe
+
 - United Kingdom (GB)
 
+### Middle East & North Africa (MENA)
+
+- Egypt (EG)
+- Saudi Arabia (SA)
+- Syria (SY)
+- United Arab Emirates (AE)
+
 Additional countries can be added through metadata without changing the validation engine.
+
+Planned MENA support:
+
+- Morocco (MA)
+- Algeria (DZ)
+- Tunisia (TN)
+- Libya (LY)
+- Qatar (QA)
+- Kuwait (KW)
+- Bahrain (BH)
+- Oman (OM)
+- Jordan (JO)
+- Lebanon (LB)
+- Iraq (IQ)
+- Palestine (PS)
+- Yemen (YE)
 
 ---
 

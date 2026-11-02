@@ -1,14 +1,32 @@
 # Changelog
 
+## 1.1.0
+
+New Countries
+
+Added support for:
+
+- Saudi Arabia (SA)
+- Syria (SY)
+- United Arab Emirates (AE)
+
+Changes:
+
+- Added Saudi Arabia metadata and formatting.
+- Added Syria metadata and formatting.
+- Added United Arab Emirates metadata and formatting.
+- Added acceptance, formatter, and registry tests for all new countries.
+- Expanded MENA coverage.
+
 ## 1.0.1
 
-Docs Enhancement
+Documentation Enhancement
 
 Changes:
 
 - Enhanced LICENSE file content.
-- Fixed the release worfklow in github actions.
-
+- Fixed the release workflow in GitHub Actions.
+- Improved project documentation and contributor experience.
 
 ## 1.0.0
 
@@ -25,3 +43,9 @@ Features:
 - Metadata-driven architecture
 - Thread-safe design
 - Deterministic validation errors
+
+Supported countries:
+
+- Egypt (EG)
+- United States (US)
+- United Kingdom (GB)
