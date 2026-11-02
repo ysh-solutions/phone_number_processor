@@ -46,4 +46,15 @@ void main() {
       );
     },
   );
+  test(
+    'contains AE metadata',
+    () {
+      const registry = InMemoryMetadataRegistry();
+
+      expect(
+        registry.byIso('AE'),
+        isNotNull,
+      );
+    },
+  );
 }

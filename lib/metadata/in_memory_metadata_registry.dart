@@ -1,3 +1,4 @@
+import 'countries/ae_metadata.dart';
 import 'countries/eg_metadata.dart';
 import 'countries/gb_metadata.dart';
 import 'countries/sa_metadata.dart';
@@ -11,6 +12,7 @@ final class InMemoryMetadataRegistry implements MetadataRegistry {
   const InMemoryMetadataRegistry();
 
   static const _countries = {
+    'AE': unitedArabEmiratesMetadata,
     'EG': egyptMetadata,
     'GB': gbMetadata,
     'SA': saudiArabiaMetadata,
