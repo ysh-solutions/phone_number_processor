@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
 scripts/run_linting.sh
 scripts/generate_docs.sh
 scripts/generate_test_coverage_report.sh
