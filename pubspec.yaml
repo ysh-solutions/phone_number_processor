@@ -2,7 +2,7 @@ name: phone_number_processor
 
 description: Metadata-driven phone number validation and formatting library.
 
-version: 1.0.0
+version: 1.0.1
 
 homepage: https://github.com/ysh-solutions/phone_number_processor
 
