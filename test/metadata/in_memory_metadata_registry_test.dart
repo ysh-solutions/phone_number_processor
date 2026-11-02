@@ -24,4 +24,15 @@ void main() {
 
     expect(registry.byIso('GB'), isNotNull);
   });
+  test(
+    'contains SA metadata',
+    () {
+      const registry = InMemoryMetadataRegistry();
+
+      expect(
+        registry.byIso('SA'),
+        isNotNull,
+      );
+    },
+  );
 }

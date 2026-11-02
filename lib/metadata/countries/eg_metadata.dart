@@ -1,4 +1,4 @@
-import '../../formatting/egypt_formatter.dart';
+import '../../formatting/eg_formatter.dart';
 import '../country_phone_metadata.dart';
 
 const egyptMetadata = CountryPhoneMetadata(

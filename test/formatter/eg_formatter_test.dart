@@ -1,4 +1,4 @@
-import 'package:phone_number_processor/formatting/egypt_formatter.dart';
+import 'package:phone_number_processor/formatting/eg_formatter.dart';
 import 'package:test/test.dart';
 
 void main() {
