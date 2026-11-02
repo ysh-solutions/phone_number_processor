@@ -1,0 +1,29 @@
+name: Coverage
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@v1
+
+      - run: dart pub get
+
+      - run: dart test --coverage=coverage
+
+      - run: |
+          dart pub global activate coverage
+          format_coverage \
+            --packages=.dart_tool/package_config.json \
+            --report-on=lib \
+            --in=coverage \
+            --out=coverage/lcov.info \
+            --lcov
