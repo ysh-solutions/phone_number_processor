@@ -35,4 +35,15 @@ void main() {
       );
     },
   );
+  test(
+    'contains SY metadata',
+    () {
+      const registry = InMemoryMetadataRegistry();
+
+      expect(
+        registry.byIso('SY'),
+        isNotNull,
+      );
+    },
+  );
 }

@@ -1,6 +1,7 @@
 import 'countries/eg_metadata.dart';
 import 'countries/gb_metadata.dart';
 import 'countries/sa_metadata.dart';
+import 'countries/sy_metadata.dart';
 import 'countries/us_metadata.dart';
 import 'country_phone_metadata.dart';
 import 'metadata_registry.dart';
@@ -13,6 +14,7 @@ final class InMemoryMetadataRegistry implements MetadataRegistry {
     'EG': egyptMetadata,
     'GB': gbMetadata,
     'SA': saudiArabiaMetadata,
+    'SY': syriaMetadata,
     'US': usMetadata,
   };
   static const version = MetadataRegistryVersion('2026.11');
