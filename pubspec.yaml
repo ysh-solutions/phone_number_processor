@@ -1,0 +1,19 @@
+name: phone_number_processor
+
+description: Metadata-driven phone number validation and formatting library.
+
+version: 1.0.0
+
+homepage: https://github.com/ysh-solutions/phone_number_processor
+
+repository: https://github.com/ysh-solutions/phone_number_processor
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dev_dependencies:
+  coverage_lens: ^1.4.0
+  lints: ^6.0.0
+  test: ^1.25.6
+dependencies:
+  collection: ^1.19.1
