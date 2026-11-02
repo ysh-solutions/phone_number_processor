@@ -75,7 +75,7 @@ Additional countries can be added through metadata without changing the validati
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone github.com/ysh-solutions/phone_number_processor
 cd phone_number_processor
 ```
 
