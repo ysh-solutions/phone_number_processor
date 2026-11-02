@@ -10,8 +10,7 @@ import '../resolver/country_resolver.dart';
 import '../validation/phone_validator.dart';
 import '../validation/phone_validation_context.dart';
 
-final class DefaultPhoneNumberProcessor
-    implements PhoneNumberProcessor {
+final class DefaultPhoneNumberProcessor implements PhoneNumberProcessor {
   final InputNormalizer normalizer;
 
   final CountryResolver resolver;
@@ -32,8 +31,7 @@ final class DefaultPhoneNumberProcessor
     String input,
     PhoneOptions options,
   ) {
-    final normalized =
-        normalizer.normalize(input);
+    final normalized = normalizer.normalize(input);
 
     if (!normalized.success) {
       return PhoneValidationResult.invalid(
@@ -42,8 +40,7 @@ final class DefaultPhoneNumberProcessor
       );
     }
 
-    final resolution =
-        resolver.resolve(
+    final resolution = resolver.resolve(
       normalized.value!,
       options.defaultCountry,
     );
@@ -55,12 +52,10 @@ final class DefaultPhoneNumberProcessor
       );
     }
 
-    final validation =
-        validator.validate(
+    final validation = validator.validate(
       PhoneValidationContext(
         metadata: resolution.metadata!,
-        nationalNumber:
-            resolution.nationalNumber!,
+        nationalNumber: resolution.nationalNumber!,
       ),
     );
 
@@ -71,27 +66,19 @@ final class DefaultPhoneNumberProcessor
       );
     }
 
-    final raw =
-        generator.generate(
+    final raw = generator.generate(
       metadata: resolution.metadata!,
-      nationalNumber:
-          resolution.nationalNumber!,
+      nationalNumber: resolution.nationalNumber!,
     );
 
-    final formatted =
-        resolution.metadata!
-            .formatter
-            .format(raw);
+    final formatted = resolution.metadata!.formatter.format(raw);
 
     return PhoneValidationResult.valid(
       originalInput: input,
       raw: raw,
       formatted: formatted,
-      country:
-          resolution.metadata!.isoCode,
-      countryCode:
-          resolution.metadata!
-              .countryCode,
+      country: resolution.metadata!.isoCode,
+      countryCode: resolution.metadata!.countryCode,
       type: validation.type!,
     );
   }

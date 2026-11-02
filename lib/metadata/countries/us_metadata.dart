@@ -5,9 +5,7 @@ const usMetadata = CountryPhoneMetadata(
   isoCode: 'US',
   countryCode: '1',
   nationalPrefix: '1',
-
   validLengths: {10},
-
   mobilePrefixes: {
     '2',
     '3',
@@ -18,8 +16,6 @@ const usMetadata = CountryPhoneMetadata(
     '8',
     '9',
   },
-
   fixedLinePrefixes: {},
-
   formatter: UsFormatter(),
 );

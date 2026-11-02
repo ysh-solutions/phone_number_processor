@@ -10,11 +10,9 @@ final class LengthValidator {
   ) {
     final lengths = metadata.validLengths;
 
-    final minLength =
-        lengths.reduce((a, b) => a < b ? a : b);
+    final minLength = lengths.reduce((a, b) => a < b ? a : b);
 
-    final maxLength =
-        lengths.reduce((a, b) => a > b ? a : b);
+    final maxLength = lengths.reduce((a, b) => a > b ? a : b);
 
     if (nationalNumber.length < minLength) {
       return PhoneValidationError.tooShort;

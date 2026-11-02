@@ -5,17 +5,13 @@ const gbMetadata = CountryPhoneMetadata(
   isoCode: 'GB',
   countryCode: '44',
   nationalPrefix: '0',
-
   validLengths: {10},
-
   mobilePrefixes: {
     '7',
   },
-
   fixedLinePrefixes: {
     '1',
     '2',
   },
-
   formatter: GbFormatter(),
 );

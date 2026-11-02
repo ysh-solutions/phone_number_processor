@@ -9,29 +9,18 @@ import 'package:phone_number_processor/validation/rules/length_validator.dart';
 import 'package:phone_number_processor/validation/rules/prefix_validator.dart';
 
 DefaultPhoneNumberProcessor buildProcessor() {
-  final registry =
-      const InMemoryMetadataRegistry();
+  final registry = const InMemoryMetadataRegistry();
 
   return DefaultPhoneNumberProcessor(
-    normalizer:
-        const DefaultInputNormalizer(),
-
-    resolver:
-        DefaultCountryResolver(
+    normalizer: const DefaultInputNormalizer(),
+    resolver: DefaultCountryResolver(
       registry,
     ),
-
-    validator:
-        const DefaultPhoneValidator(
-      lengthValidator:
-          LengthValidator(),
-      prefixValidator:
-          PrefixValidator(),
-      classifier:
-          PhoneNumberClassifier(),
+    validator: const DefaultPhoneValidator(
+      lengthValidator: LengthValidator(),
+      prefixValidator: PrefixValidator(),
+      classifier: PhoneNumberClassifier(),
     ),
-
-    generator:
-        const E164Generator(),
+    generator: const E164Generator(),
   );
 }

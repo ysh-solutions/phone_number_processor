@@ -2,9 +2,7 @@ import '../contracts/phone_validation_error.dart';
 import '../internal/normalized_input.dart';
 import 'input_normalizer.dart';
 
-final class DefaultInputNormalizer
-    implements InputNormalizer {
-
+final class DefaultInputNormalizer implements InputNormalizer {
   const DefaultInputNormalizer();
 
   @override
@@ -17,8 +15,7 @@ final class DefaultInputNormalizer
       );
     }
 
-    final plusCount =
-        '+'.allMatches(trimmed).length;
+    final plusCount = '+'.allMatches(trimmed).length;
 
     if (plusCount > 1) {
       return NormalizedInput.failure(
@@ -40,8 +37,7 @@ final class DefaultInputNormalizer
       );
     }
 
-    final unsupportedCharacters =
-        RegExp(r'[^0-9+\-\(\)\s]');
+    final unsupportedCharacters = RegExp(r'[^0-9+\-\(\)\s]');
 
     if (unsupportedCharacters.hasMatch(trimmed)) {
       return NormalizedInput.failure(

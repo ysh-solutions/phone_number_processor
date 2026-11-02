@@ -33,7 +33,7 @@ void main() {
         international.country,
       );
 
-            expect(
+      expect(
         local.countryCode,
         international.countryCode,
       );

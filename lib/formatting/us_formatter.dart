@@ -1,7 +1,6 @@
 import 'number_formatter.dart';
 
-final class UsFormatter
-    implements NumberFormatter {
+final class UsFormatter implements NumberFormatter {
   const UsFormatter();
 
   @override

@@ -66,24 +66,24 @@ void main() {
     }
   });
   test(
-  'validates egypt fixed line number',
-  () {
-    final result = processor.process(
-      '02123456789',
-      const PhoneOptions(
-        defaultCountry: 'EG',
-      ),
-    );
+    'validates egypt fixed line number',
+    () {
+      final result = processor.process(
+        '02123456789',
+        const PhoneOptions(
+          defaultCountry: 'EG',
+        ),
+      );
 
-    expect(
-      result.isValid,
-      true,
-    );
+      expect(
+        result.isValid,
+        true,
+      );
 
-    expect(
-      result.type,
-      PhoneNumberType.fixedLine,
-    );
-  },
-);
+      expect(
+        result.type,
+        PhoneNumberType.fixedLine,
+      );
+    },
+  );
 }

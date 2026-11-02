@@ -3,8 +3,7 @@ import 'package:phone_number_processor/phone_number_processor.dart';
 
 void main() {
   test('consumer can use package through public api only', () {
-    final processor =
-        PhoneNumberProcessorBuilder.build();
+    final processor = PhoneNumberProcessorBuilder.build();
 
     final result = processor.process(
       '01012345678',

@@ -8,18 +8,15 @@ final class PrefixValidator {
     CountryPhoneMetadata metadata,
     String nationalNumber,
   ) {
-    final mobileMatch =
-        metadata.mobilePrefixes.any(
+    final mobileMatch = metadata.mobilePrefixes.any(
       nationalNumber.startsWith,
     );
 
-    final fixedMatch =
-        metadata.fixedLinePrefixes.any(
+    final fixedMatch = metadata.fixedLinePrefixes.any(
       nationalNumber.startsWith,
     );
 
-    if (!mobileMatch &&
-        !fixedMatch) {
+    if (!mobileMatch && !fixedMatch) {
       return PhoneValidationError.numberNotAllowed;
     }
 

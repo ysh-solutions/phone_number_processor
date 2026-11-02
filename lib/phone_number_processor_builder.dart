@@ -18,15 +18,12 @@ final class PhoneNumberProcessorBuilder {
 
     return DefaultPhoneNumberProcessor(
       normalizer: const DefaultInputNormalizer(),
-
       resolver: DefaultCountryResolver(registry),
-
       validator: const DefaultPhoneValidator(
         lengthValidator: LengthValidator(),
         prefixValidator: PrefixValidator(),
         classifier: PhoneNumberClassifier(),
       ),
-
       generator: const E164Generator(),
     );
   }
