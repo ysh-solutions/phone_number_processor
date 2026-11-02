@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.1
+
+Docs Enhancement
+
+Changes:
+
+- Enhanced LICENSE file content.
+- Fixed the release worfklow in github actions.
+
+
 ## 1.0.0
 
 Initial release.
